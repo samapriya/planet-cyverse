@@ -38,7 +38,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     cd Clip-Ship-Planet-CLI && pip install -r requirements.txt
     python setup.py install
 
-# Planet Earth Engine CLI included GEE Tools
+# Planet Earth Engine CLI
     git clone https://github.com/samapriya/planet-cyverse
     cd Tools/Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
     python setup.py install
