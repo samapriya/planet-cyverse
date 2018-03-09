@@ -51,8 +51,10 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 # Setup Go-Lang Paths
     PATH=$PATH:/opt/go/bin
     GOPATH=/opt/go
+    mkdir /usr/config/planet
+    touch /usr/config/planet/pkey.csv
 
 
 %labels
     Maintainer Tyson L Swetnam & Sam Roy
-    Version v0.4
+    Version v0.5
