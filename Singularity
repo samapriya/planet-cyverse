@@ -54,7 +54,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 # Move Planet Key to User    
     mkdir ~/.config
     mkdir ~/.config/planet
-    mv home/root/.config/planet/pkey.csv ~/.config/planet/pkey.csv
+    mv /home/root/.config/planet/pkey.csv ~/.config/planet/pkey.csv
 
 
 %labels
