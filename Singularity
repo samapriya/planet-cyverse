@@ -35,7 +35,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 # Planet Clip and Ship
     git clone https://github.com/samapriya/planet-cyverse
-    cd Tools/Clip-Ship-CLI && pip install -r requirements.txt
+    cd planet-cyverse/Tools/Clip-Ship-CLI && pip install -r requirements.txt
     python setup.py install
 
 # Planet Earth Engine CLI
