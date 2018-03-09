@@ -39,13 +39,8 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     python setup.py install
 
 # Planet Earth Engine CLI
-    git clone https://github.com/samapriya/Planet-GEE-Pipeline-CLI
-    cd Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
-    python setup.py install
-
-# Google Earth Engine Asset Manager
-    git clone https://github.com/samapriya/gee_asset_manager_addon
-    cd gee_asset_manager_addon && pip install -r requirements.txt
+    git clone git clone https://github.com/samapriya/planet-cyverse
+    cd Tools/Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
     python setup.py install
 
 ##Install Drive
@@ -59,4 +54,4 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %labels
     Maintainer Tyson L Swetnam & Sam Roy
-    Version v0.2
+    Version v0.3
