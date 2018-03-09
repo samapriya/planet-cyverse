@@ -34,12 +34,14 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     python setup.py install
 
 # Planet Clip and Ship
+    cd
     git clone https://github.com/samapriya/planet-cyverse
     cd planet-cyverse/Tools/Clip-Ship-CLI && pip install -r requirements.txt
     python setup.py install
 
 # Planet Earth Engine CLI
-    cd Tools/Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
+    cd
+    cd planet-cyverse/Tools/Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
     python setup.py install
 
 ##Install Drive
