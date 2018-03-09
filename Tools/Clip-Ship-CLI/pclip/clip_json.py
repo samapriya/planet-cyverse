@@ -5,8 +5,8 @@ from urllib2 import Request, urlopen
 from os.path import expanduser
 from retrying import retry
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
-planethome=expanduser("/usr/config/planet/")
-pkey=expanduser("/usr/config/planet/pkey.csv")
+planethome=expanduser("~/.config/planet/")
+pkey=expanduser("~/.config/planet/pkey.csv")
 f=open(pkey)
 for row in csv.reader(f):
     #print(str(row).strip("[']"))
