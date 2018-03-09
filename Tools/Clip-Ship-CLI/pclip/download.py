@@ -21,8 +21,8 @@ urllib3.disable_warnings()
 
 ASSET_URL = 'https://api.planet.com/data/v1/item-types/{}/items/{}/assets/'
 SEARCH_URL = 'https://api.planet.com/data/v1/quick-search'
-planethome=expanduser("~/.config/planet/")
-pkey=expanduser("~/.config/planet/pkey.csv")
+planethome=expanduser("/usr/config/planet/")
+pkey=expanduser("/usr/config/planet/pkey.csv")
 if not os.path.exists(pkey):
     print("Enter your Planet API Key")
     password=getpass.getpass()
