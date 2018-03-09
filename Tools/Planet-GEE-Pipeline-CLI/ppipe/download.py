@@ -21,7 +21,7 @@ urllib3.disable_warnings()
 
 ASSET_URL = 'https://api.planet.com/data/v1/item-types/{}/items/{}/assets/'
 SEARCH_URL = 'https://api.planet.com/data/v1/quick-search'
-pkey=expanduser("/usr/config/planet/pkey.csv")
+pkey=expanduser("~/.config/planet/pkey.csv")
 f=open(pkey)
 for row in csv.reader(f):
     #print(str(row).strip("[']"))
