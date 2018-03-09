@@ -17,7 +17,7 @@ from cli_metadata import metadata
 from os.path import expanduser
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 def planet_key_entry():
-    planethome=expanduser("~/.config/planet/")
+    planethome=expanduser("/usr/config/planet/")
     if not os.path.exists(planethome):
         os.mkdir(planethome)
     print("Enter your Planet API Key")
