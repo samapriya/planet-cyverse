@@ -51,10 +51,9 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 # Setup Go-Lang Paths
     PATH=$PATH:/opt/go/bin
     GOPATH=/opt/go
-# Move Planet Key to User    
-    mkdir ~/.config
-    mkdir ~/.config/planet
-    mv /home/root/.config/planet/pkey.csv ~/.config/planet/pkey.csv
+  
+# create blank Planet Key for the User    
+    touch ~/.config/planet/pkey.csv
 
 
 %labels
