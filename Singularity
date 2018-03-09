@@ -39,7 +39,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     python setup.py install
 
 # Planet Earth Engine CLI
-    git clone git clone https://github.com/samapriya/planet-cyverse
+    git clone https://github.com/samapriya/planet-cyverse
     cd Tools/Planet-GEE-Pipeline-CLI && pip install -r requirements.txt
     python setup.py install
 
