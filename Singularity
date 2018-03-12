@@ -9,7 +9,9 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     cp requirements.txt $SINGULARITY_ROOTFS/tmp/
 
 %post
-    apt-get update && apt-get install -y apt-transport-https build-essential gdal-bin git golang-go openssl python python-dev python-pip software-properties-common wget
+    apt-get install -y software-properties-common
+    apt-get update && apt-get install -y python python-dev python-pip build-essential git openssl golang-go gdal-bin
+    apt-get install -y apt-transport-https build-essential openssl software-properties-common
     apt-add-repository ppa:longsleep/golang-backports
     apt-add-repository ppa:ubuntugis/ppa
     apt-add-repository universe
@@ -62,4 +64,4 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %labels
     Maintainer Tyson L Swetnam & Sam Roy
-    Version v0.6
+    Version v0.7
