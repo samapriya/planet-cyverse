@@ -14,7 +14,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     apt-add-repository ppa:ubuntugis/ppa
     apt-add-repository universe
     apt-get update
-    apt-get install -y python python-dev python-pip build-essential git openssl golang-go gdal-bin
+    apt-get install -y build-essential gdal-bin git golang-go openssl python python-dev python-pip wget
     pip install --upgrade pip
     pip install --upgrade virtualenv setuptools
     pip install planet google-api-python-client pyCrypto earthengine-api
@@ -46,6 +46,11 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 ##Install Drive
     go get -u github.com/odeke-em/drive/cmd/drive
+
+# Install iRODS iCommands
+    wget -qO - https://packages.irods.org/irods-signing-key.asc | apt-key add -
+    echo "deb [arch=amd64] https://packages.irods.org/apt/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/renci-irods.list
+    apt-get update && apt-get install -y irods-icommands
 
 %environment
 # Setup Go-Lang Paths
