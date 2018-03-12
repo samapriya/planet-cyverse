@@ -1,10 +1,11 @@
-# Remote Sensing Environments in Scalable HPC Singularity Images
-
 [![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/711)
+
+# Remote Sensing Environments in Scalable HPC Singularity Images
 
 The purpose of this singularity images and setup is to allow for development of an active pipeline between image resources, hosting, ingestion protocol into Google Earth Engine and retentation on volume as needed.
 
 ## Main Build components ( Should include)
+
 * Planet API Download Client to download images from Planet API **Included**
 * FTP client to pull images from existing sftp or ftp addresses **In progress**
 * Include additional tools (shapely, pdal, rasterio) **In progress**
@@ -14,18 +15,19 @@ The purpose of this singularity images and setup is to allow for development of 
 * Jupyter notebook to connnect to mounted volume for local analysis and export of image or remote analysis and export from Google Earth Engine **In progress**
 * Drive to access google drive: Check if all tasks have completed and download from google drive, Verify and delete to preserve google drive storage **In progress**
 
-## Possible Intergations and Enhancements
-* Leaflet based image and vector visualization
+## Possible Integrations and Enhancements
+
+* Leaflet based imagery and vector visualization
 * Image tiling so user can visualize on the leaflet window within the Jupyter notebooks
-* End results are always powerfull include QGIS with x11 support to allow user to generate maps and export as images.
-
-
+* End results include QGIS with X11 support to allow user to generate maps and export as images.
 
 ## Planet CLI in a Docker Container
 
+*In Progress*
+
 ## Planet CLI in a Singularity Container
 
-Singularity files are in the `/basic` and `/osgeo` folders.
+Singularity files are in the `/basic` and `/osgeo` folders. The `/osgeo` container is maintained by Tyson Swetnam on [Singularity Hub]()
 
 To build a container:
 
