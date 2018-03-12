@@ -13,7 +13,7 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     apt-add-repository ppa:longsleep/golang-backports
     apt-add-repository ppa:ubuntugis/ppa
     apt-add-repository universe
-    apt-get update &&  apt-get install -y apt-transport-https python python-dev python-pip build-essential git openssl golang-go gdal-bin
+    apt-get update &&  apt-get install -y apt-transport-https python python-dev python-pip build-essential git openssl golang-go gdal-bin wget
     pip install --upgrade pip
     pip install --upgrade virtualenv setuptools
     pip install planet google-api-python-client pyCrypto earthengine-api
