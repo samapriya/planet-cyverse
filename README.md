@@ -246,3 +246,29 @@ Typical speeds are between 10 and 50 Mb/s.
 Proceed with the changes? [Y/n]:y
  5392682146 / 5392682146 [==========================================================================================================================] 100.00% 1m55s
 ```
+
+# Setting up CyVerse Data Store and iRods iCommands 
+
+[Instructions](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands)
+
+```
+$ iinit
+```
+You will be queried to set up your `irods_environment.json`
+
+Enter the following:
+
+|statement  |input  |  
+|-----------|-------|
+| DNS | *data.iplantcollaborative.org* |
+|port number|*1247*|
+|user name| *your user name*|
+|zone|*iplant*|
+
+Set up auto-complete for iCommands
+[instructions](https://pods.iplantcollaborative.org/wiki/display/DS/Setting+Up+iCommands)
+
+Download [i-commands-auto.bash](https://pods.iplantcollaborative.org/wiki/download/attachments/6720192/i-commands-auto.bash).
+In your home directory, rename i-commands-auto.bash to .i-commands-auto.bash
+In your .bashrc or .bash_profile, enter the following: 
+source .i-commands-auto.bash
