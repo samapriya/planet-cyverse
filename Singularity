@@ -9,12 +9,11 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
     cp requirements.txt $SINGULARITY_ROOTFS/tmp/
 
 %post
-    apt-get install -y software-properties-common
+    apt-get update && apt-get install -y apt-transport-https build-essential gdal-bin git golang-go openssl python python-dev python-pip software-properties-common wget
     apt-add-repository ppa:longsleep/golang-backports
     apt-add-repository ppa:ubuntugis/ppa
     apt-add-repository universe
-    apt-get update
-    apt-get install -y build-essential gdal-bin git golang-go openssl python python-dev python-pip wget
+    apt-get update 
     pip install --upgrade pip
     pip install --upgrade virtualenv setuptools
     pip install planet google-api-python-client pyCrypto earthengine-api
